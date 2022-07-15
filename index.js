@@ -23,7 +23,7 @@ const map = (str, domains) => email(str, domains[0])
  * @api public
  */
 
-module.exports = (address, cb = map, suggested, merge) => {
+export const suggest = (address, cb = map, suggested, merge) => {
   const [left, right] = address.split('@')
   if (merge) suggested = suggested.concat(popular)
   if (left && right) return cb(address, pick(right, suggested || popular), left)
