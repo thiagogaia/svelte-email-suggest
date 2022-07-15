@@ -49,7 +49,7 @@ suggest('hello@console.warn();', undefined, ['world.com', 'olivier.com'], true)
 ## Installation
 
 ```shell
-npm install email-suggest --save
+npm install svelte-email-suggest --save
 ```
 
 [![NPM](https://nodei.co/npm/email-suggest.png)](https://nodei.co/npm/email-suggest/)
